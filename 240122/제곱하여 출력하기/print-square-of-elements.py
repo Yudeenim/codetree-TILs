@@ -5,4 +5,5 @@ new_arr = []
 for elem in arr:
     new_arr.append(elem * elem)
 
-print(*new_arr)
+for i in new_arr:
+    print(i, end = " ")

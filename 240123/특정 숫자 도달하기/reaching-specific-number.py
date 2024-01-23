@@ -1,7 +1,6 @@
-arr = list(map(int, input().split(" ")))
+arr = list(map(float, input().split(" ")))
 summ = 0
 avg = 0
-
 i = 0
 
 while arr[i] < 250:
@@ -9,4 +8,4 @@ while arr[i] < 250:
     i += 1
 
 avg = summ / i
-print(summ, avg)
+print(f"{summ:.0f} {avg}")

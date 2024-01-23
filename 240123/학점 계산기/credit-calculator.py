@@ -1,4 +1,4 @@
-n = input()
+n = int(input())
 arr = list(map(float, input().split(" ")))
 summ = 0
 avg = 0
@@ -6,7 +6,7 @@ avg = 0
 for elem in arr:
     summ += elem
 
-avg = summ / len(arr)
+avg = summ / n
 
 print(f"{avg:.1f}")
 

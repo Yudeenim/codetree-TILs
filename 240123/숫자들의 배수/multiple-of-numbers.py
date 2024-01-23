@@ -1,7 +1,7 @@
 n = int(input())
-num = 2
+num = 1
 cnt = 0
-arr = [n]
+arr = []
 
 while(1):
     arr.append(n * num)

@@ -1,11 +1,13 @@
-arr = list(map(float, input().split(" ")))
-summ = 0
-avg = 0
-i = 0
+arr = list(map(int, input().split()))
+sum_val = 0
+cnt = 0
 
-while arr[i] < 250:
-    summ += arr[i]
-    i += 1
+for elem in arr:
+	if elem >= 250:
+		break
+	sum_val += elem
+	cnt += 1
 
-avg = summ / i
-print(f"{summ:.0f} {avg}")
+avg = sum_val / cnt
+
+print(f"{sum_val} {avg:.1f}")

@@ -8,4 +8,4 @@ for elem in arr:
     sum_val += elem
     cnt += 1
 
-print(sum_val, sum_val / cnt)
+print(f"{sum_val} {sum_val / cnt:.1f}")

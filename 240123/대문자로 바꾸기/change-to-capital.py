@@ -5,6 +5,6 @@ arr_2d = [
 
 for i in range(5):
 	for j in range(3):
-		arr_2d[i][j] = chr(ord(arr_2d[i][j]) + ord('A') - ord('a'))
+		arr_2d[i][j] = arr_2d[i][j].upper()
 		print(arr_2d[i][j], end=" ")
 	print()

@@ -3,8 +3,9 @@ n = input()
 n = [int(digit) for digit in str(n)]
 digits = []
 num = 0
+
 for i in range(len(n)):
-    num = num * a + n[i]                #num = 10진수로 표현한 n
+    num = num * a + n[i]
 
 while True:
     if num < b:
@@ -14,4 +15,4 @@ while True:
     digits.append(num % b)
     num //= b
 
-print(int(''.join(map(str, digits))))
+print(int(''.join(map(str, digits[::-1]))))

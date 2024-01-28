@@ -5,7 +5,7 @@ max_block = 0
 for _ in range(k):
     a, b = tuple(map(int, input().split()))
     for i in range(a, b+1):
-        blocks[i] += 1
+        blocks[i - 1] += 1
 
 for elem in blocks:
     if elem > max_block:

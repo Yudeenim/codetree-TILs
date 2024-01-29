@@ -30,3 +30,5 @@ if arr:  # arr가 비어있지 않은 경우에만 min_x, min_y 설정
     min_x, min_y = min(arr, key = lambda point: (point[0], point[1]))
     max_x, max_y = max(arr, key = lambda point: (point[0], point[1]))
     print((max_x - min_x + 1) * (max_y - min_y + 1))
+else:
+    print(0)

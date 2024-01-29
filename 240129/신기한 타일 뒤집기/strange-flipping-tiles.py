@@ -19,7 +19,7 @@ for _ in range(n):
 
     else:
         # 오른쪽으로 이동할 경우: colors의 cur(현재 상태)를 기준으로 오른쪽으로 distance만큼 0을 1로 변경
-        for i in range(cur + 1, cur + distance + 1):
+        for i in range(cur, cur + distance, 1):
             colors[i] = 1
         cur += distance
 
@@ -29,4 +29,8 @@ for elem in colors:
     elif elem == 1:
         cnt_black += 1
 
-print(cnt_white, cnt_black)
+if cnt_black == 0:
+    print(cnt_white - 1, 0)
+elif cnt_white == 0:
+    print(0, cnt_black - 1)
+else: print(cnt_white, cnt_black)

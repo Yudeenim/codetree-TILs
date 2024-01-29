@@ -26,9 +26,11 @@ for x in range(0, MAX_R + 1):
         if checked[x][y] == 2:
             arr.append([x, y])
 
-if arr:  # arr가 비어있지 않은 경우에만 min_x, min_y 설정
-    min_x, min_y = min(arr, key = lambda point: (point[0], point[1]))
-    max_x, max_y = max(arr, key = lambda point: (point[0], point[1]))
+if arr:
+    min_x = min(arr, key=lambda point: point[0])[0]
+    min_y = min(arr, key=lambda point: point[1])[1]
+    max_x = max(arr, key=lambda point: point[0])[0]
+    max_y = max(arr, key=lambda point: point[1])[1]
     print((max_x - min_x + 1) * (max_y - min_y + 1))
 else:
     print(0)

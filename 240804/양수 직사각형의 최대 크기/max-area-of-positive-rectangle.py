@@ -3,7 +3,7 @@ grid = [
     list(map(int, input().split()))
     for _ in range(n)
 ]
-result = 0
+result = -1
 
 def in_grid (x, y, i, j):
     if x >= 0 and y >= 0 and x + j < m and y + i < n:
